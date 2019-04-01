@@ -1,0 +1,21 @@
+import { h, app } from "hyperapp"
+
+const state = {
+  text1: "Hello",
+  text2: "How Goes It?"
+}
+
+const actions = {
+  
+}
+
+const view = (state, actions) => (
+  <div class="main1">
+    <h1 class="h1First">{state.text1}</h1>
+    <h1 class ="h1Second">{state.text2}</h1>
+    <div class="chips"><button>yoyo</button></div>	
+  </div>
+)
+
+
+app(state, actions, view, document.body)
